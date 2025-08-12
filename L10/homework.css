@@ -1,0 +1,50 @@
+body {
+    background-color: #000000ce;
+}
+
+h1 {
+    color: #eb0000;
+}
+
+a {
+    color: #eb00b0;
+}
+
+a:hover {
+    color: #ecfc0c;
+}
+
+ul > li {
+    font-weight: bold;
+}
+
+h1, p {
+    background-color: #ae00ff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+ul li:hover {
+    background-color: #2f00ff;
+}
+
+ul li:nth-child(3) {
+    background-color: #00ff00;
+}
+
+p:not(:first-of-type) {
+    text-decoration: underline;
+}
+
+ul li::before {
+    content: "🌟";
+}
+
+a::after {
+    content: "✨";
+}
+
+p::first-letter {
+    font-size: 200%;
+    color: #00ff2acc;
+}
