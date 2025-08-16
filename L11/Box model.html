@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Box model</title>
+
+        <!--Internal css-->
+        <style type="text/css">
+            .Example1 {
+                width: 220px;
+                background-color: yellow;
+                    /* (top)px (right)px (bottom)px (left)px */
+                padding: 0px 10px 20px 40px;
+                border: 0px;
+                margin:0px;
+
+                float: left;
+            }
+
+            .Example2 {
+                width: 220px;
+                background-color: green;
+                    /* (top)px (right)px (bottom)px (left)px */
+                padding: 80px;
+                border-width: 5px;
+                border-style: solid;
+                border-color: black;
+                /* border: 5px solid black; */
+
+                margin: 60px 60px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Box Model Example</h1>
+        <hr>
+        <p class="Example1">My content Example 1</p>
+
+        <p class="Example2">My content Example 2</p>
+    </body>
+</html>
