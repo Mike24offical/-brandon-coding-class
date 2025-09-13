@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>simple calculator</title>
+    </head>
+    <body>
+        <h1>Simple Calculator</h1>
+        <p>Enter two numbers to see their sum.</p>
+        <p id="result"></p>
+        <p id="result2"></p>
+        <p id="result3"></p>
+        <p id="result4"></p>
+
+
+        <script>
+            // Declare variables
+            var num1 = 8;
+            var num2 = 12;
+
+            // Calculate the sum
+            var sum = num1 + num2;
+
+            // Display the result
+            document.getElementById("result").innerHTML = "The sum of " + num1 + " and " + num2 + " is " + sum + ".";
+
+
+
+            //Calculate the difference
+            var difference = num2 - num1;
+
+            //Display the difference
+            document.getElementById("result2").innerHTML += "<br>The difference between " + num2 + " and " + num1 + " is " + difference + ".";
+
+
+
+            //Calculate the product
+            var product = num1 * num2;
+
+            //Display the product
+            document.getElementById("result4").innerHTML += "<br>The product of " + num1 + " and " + num2 + " is " + product + ".";
+
+
+            //Calculate the quotient
+            var quotient = num2 / num1;
+
+            //Display the quotient
+            document.getElementById("result3").innerHTML += "<br>The quotient of " + num2 + " divided by " + num1 + " is " + quotient + ".";
+
+        </script>
+    </body>
+</html>
