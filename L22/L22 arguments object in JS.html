@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>arguments object in JS.</title>
+    </head>
+    <body>
+        <p>Find the largest number with the help of Argiments</p>
+        <p id="result"></p>
+
+        <script>
+            function findmax() {
+                var max = 0;
+                for (var i = 0; i < arguments.length; i++) {
+                    if (arguments[i] > max) {
+                        max = arguments[i];
+                    }
+                }
+                return max;
+            }
+
+            document.getElementById("result").innerHTML = findmax( 8, 4, 5, 6, 2);
+        </script>
+    </body>
+</html>
