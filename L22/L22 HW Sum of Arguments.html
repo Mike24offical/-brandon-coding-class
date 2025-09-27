@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HW Sum of Arguments.</title>
+    </head>
+    <body>
+
+        <p id="demo" style="background-color: rgba(238, 255, 0, 0.856);"></p>
+        <p id="result"></p>
+        <script type="text/javascript">
+            var value = Math.abs(20);
+            document.write("Demo Test Value: " + value + "<br>");
+
+            var value2 = Math.acos(-1);
+            document.write("Demo Test Value 2: " + value2 + "<br>");
+
+            var value3 = Math.asin(1);
+            document.write("Demo Test Value 3: " + value3 + "<br>");
+
+            var value4 = Math.atan(.5);
+            document.write("Demo Test Value 4: " + value4 + "<br>");
+
+            var value5 = Math.ceil(6.2);
+            document.write("Demo Test Value 5: " + value5 + "<br>");
+
+
+            function findsum() {
+                var sum = 0;
+                for (var i = 0; i < arguments.length; i++) {
+                    if (arguments[i] > sum) {
+                        sum = arguments[i];
+                    }
+                }
+                return sum;
+            }
+
+            document.getElementById("demo").innerHTML = "the" + " of " + "8, 4, 5, 6, 2 is: ";
+            document.getElementById("result").innerHTML = findsum( 8, 4, 5, 6, 2);
+        </script>
+    </body>
+</html>
