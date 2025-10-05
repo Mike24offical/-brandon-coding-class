@@ -4,17 +4,37 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HW Accessing values with HTML DOM Structure.</title>
+
+        <link href="style-3.CSS" rel="stylesheet" href="style/css">
+        <style>
+            body {
+                background-color: black;
+                text-align: center;
+            }
+            #one {
+                font-family: Arial, Helvetica, sans-serif;
+                text-decoration: underline;
+                font-size: 40px;
+            }
+        </style>
     </head>
     <body>
-        <h1 id="one">,Welcome to my website</h1>
-        <p>This is my first JS project</p>
+        <h1 id="one" style="color: snow;">Welcome to my website</h1>
+        <hr>
+        <p style="color: snow;" id="button">This is my first JS project</p>
 
-        <p>I love coding and I am a student at codingal</p>
-        <p>I have the best teacher you could as for <b><mark>Nurinnajiah Tsani</mark></b>.<br> She is kind and 
-           also helps fix mistakes that I make when doing a project.</p>
+        <p style="color: snow;" id="button">I love coding and I am a student at codingal</p>
+        <p style="color: snow;" id="button">Rating in all the teachers that I know of have the best teacher you could as for <b><mark>Nurinnajiah Tsani</mark></b>.<br> She is kind and 
+           also helps fix mistakes that I make when doing a project.
+        </p>
+        <p style="color: snow;" id="button">
+            I want to be come a software engeneer when I grow up and I will work hard to achieve my goal.
+        </p>
+        <p style="color: snow;" id="button">Some time later if you would like to join follow this link <a href="https://ww.codingal.com/"><bold>codingal</bold></a></p>
+        <button type="button" style="font-size: 20px; background-color: rgb(255, 255, 255);" onclick="document.getElementById('one').style.color='blue'">Click me to change the color of the heading</button>
         <script>
             var text = document.getElementById("one").innerHTML;
-            alert("HELLO!"+ text);
+            alert("HELLO!,"+ text);
         </script>
     </body>
 </html>
